@@ -1,23 +1,24 @@
-/* Modern Professional Color Scheme */
 :root {
   --primary: #1e40af;
   --accent: #e8491d;
   --dark: #0f172a;
   --light: #f8fafc;
-  --gray: #64748b;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   line-height: 1.7;
   color: #1e2937;
-  background-color: var(--light);
+  background: var(--light);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
 }
 
 /* Header */
@@ -31,8 +32,28 @@ header {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.highlight {
-  color: var(--accent);
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#branding h1 {
+  font-size: 1.9rem;
+}
+
+.highlight { color: var(--accent); }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 nav a:hover,
@@ -44,7 +65,7 @@ nav .current a {
 #showcase {
   min-height: 480px;
   background: linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)), 
-              url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat;
+              url('https://picsum.photos/id/1015/1920/1080') center/cover;
   color: #fff;
   display: flex;
   align-items: center;
@@ -53,19 +74,24 @@ nav .current a {
 
 #showcase h1 {
   font-size: 3.2rem;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
 
-/* Main Content */
+/* Main */
 #main {
   padding: 4rem 0;
   background: #fff;
 }
 
+#main .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
 .page-title {
   color: var(--dark);
-  margin-bottom: 1.5rem;
   font-size: 2.3rem;
+  margin-bottom: 1.5rem;
 }
 
 .dark {
@@ -76,6 +102,13 @@ nav .current a {
 }
 
 /* Service Cards */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
 .service-card {
   background: white;
   border-radius: 12px;
@@ -83,13 +116,11 @@ nav .current a {
   box-shadow: 0 5px 20px rgba(0,0,0,0.08);
   cursor: pointer;
   transition: all 0.3s;
-  border: 2px solid transparent;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(30,64,175,0.15);
-  border-color: var(--primary);
 }
 
 /* Buttons */
@@ -109,15 +140,53 @@ nav .current a {
   transform: translateY(-3px);
 }
 
-/* Floating Buttons */
-.social-btn:hover {
-  transform: scale(1.25);
-}
-
 /* Footer */
 footer {
   background: var(--dark);
   color: #cbd5e1;
   text-align: center;
   padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* Floating Social */
+.floating-social {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.social-btn {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+}
+
+.social-btn:hover {
+  transform: scale(1.25);
+}
+
+.social-btn img {
+  width: 36px;
+  height: 36px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #main .container {
+    grid-template-columns: 1fr;
+  }
+  #showcase h1 {
+    font-size: 2.4rem;
+  }
 }
