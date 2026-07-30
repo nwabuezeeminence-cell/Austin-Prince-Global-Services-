@@ -148,3 +148,9 @@ if (delivery && !location.trim()) {
     alert("Please enter your delivery address.");
     return;
 }
+document.getElementById("printType").selectedIndex = 0;
+document.getElementById("notes").value = "";
+document.getElementById("delivery").checked = false;
+document.getElementById("location").value = "";
+document.getElementById("locationField").style.display = "none";
+document.getElementById("fileUpload").value = "";
