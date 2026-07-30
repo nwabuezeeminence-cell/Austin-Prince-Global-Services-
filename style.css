@@ -183,3 +183,9 @@ select:focus {
   border-color: var(--primary);
   box-shadow: 0 0 8px rgba(30, 64, 175, 0.2);
 }
+.box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
