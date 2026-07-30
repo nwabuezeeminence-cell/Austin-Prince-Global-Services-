@@ -154,3 +154,4 @@ document.getElementById("delivery").checked = false;
 document.getElementById("location").value = "";
 document.getElementById("locationField").style.display = "none";
 document.getElementById("fileUpload").value = "";
+document.getElementById("overlay").addEventListener("click", closePanel);
