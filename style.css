@@ -148,3 +148,19 @@ nav .current a {
   padding: 14px 28px;
   border: none;
   border-radius
+.button_1 {
+  background: var(--accent);
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.button_1:hover {
+  background: #c73c17;
+  transform: translateY(-2px);
+}
