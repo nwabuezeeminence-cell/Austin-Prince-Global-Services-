@@ -169,3 +169,8 @@ window.open(
     `https://wa.me/${phone}?text=${encodeURIComponent(summary)}`,
     "_blank"
 );
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        closePanel();
+    }
+});
