@@ -174,3 +174,7 @@ document.addEventListener("keydown", function (e) {
         closePanel();
     }
 });
+function updateTotal() {
+    document.getElementById("totalPrice").textContent =
+        "₦" + (currentService.price * quantity).toLocaleString();
+}
