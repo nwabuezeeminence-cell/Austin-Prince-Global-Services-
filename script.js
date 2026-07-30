@@ -155,3 +155,11 @@ document.getElementById("location").value = "";
 document.getElementById("locationField").style.display = "none";
 document.getElementById("fileUpload").value = "";
 document.getElementById("overlay").addEventListener("click", closePanel);
+const submitBtn = document.querySelector(".button_1");
+
+submitBtn.disabled = true;
+submitBtn.textContent = "Submitting...";
+
+// After processing
+submitBtn.disabled = false;
+submitBtn.textContent = "SUBMIT ORDER";
