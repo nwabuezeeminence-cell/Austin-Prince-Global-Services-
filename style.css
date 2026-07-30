@@ -215,3 +215,20 @@ footer {
   text-align: center;
   padding: 20px;
 }
+.floating-social {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.social-btn img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.social-btn:hover img {
+  transform: scale(1.1);
+}
