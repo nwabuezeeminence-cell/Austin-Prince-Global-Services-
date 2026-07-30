@@ -189,3 +189,6 @@ select:focus {
   object-fit: cover;
   border-radius: 10px;
 }
+html {
+  scroll-behavior: smooth;
+}
