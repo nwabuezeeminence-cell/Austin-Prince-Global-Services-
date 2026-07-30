@@ -243,3 +243,16 @@ footer {
     margin-top: 15px;
   }
 }
+body {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
