@@ -163,3 +163,9 @@ submitBtn.textContent = "Submitting...";
 // After processing
 submitBtn.disabled = false;
 submitBtn.textContent = "SUBMIT ORDER";
+const phone = "2349115643951";
+
+window.open(
+    `https://wa.me/${phone}?text=${encodeURIComponent(summary)}`,
+    "_blank"
+);
