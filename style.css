@@ -192,3 +192,6 @@ select:focus {
 html {
   scroll-behavior: smooth;
 }
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
