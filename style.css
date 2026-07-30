@@ -232,3 +232,14 @@ footer {
 .social-btn:hover img {
   transform: scale(1.1);
 }
+@media (max-width: 767px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
