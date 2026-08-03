@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Austin Global Services | Checkout</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/checkout.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="container">
+
+<h1>
+<span class="highlight">
+Austin Global
+</span>
+Services
+</h1>
+
+</div>
+
+</header>
+
+
+
+
+<section class="checkout">
+
+
+<div class="container">
+
+
+
+<h1>
+Complete Your Order
+</h1>
+
+
+
+
+<div class="checkout-grid">
+
+
+
+<div class="customer-box">
+
+
+<h2>
+Customer Information
+</h2>
+
+
+
+<label>
+Full Name
+</label>
+
+<input 
+type="text"
+id="customerName"
+placeholder="Your name">
+
+
+
+
+
+<label>
+Phone Number
+</label>
+
+<input 
+type="tel"
+id="customerPhone"
+placeholder="Phone number">
+
+
+
+
+
+
+<label>
+Email (Optional)
+</label>
+
+<input 
+type="email"
+id="customerEmail"
+placeholder="Email">
+
+
+<div class="upload-section">
+
+<label>
+Upload Document / Image
+</label>
+
+<input 
+type="file"
+id="customerFile"
+accept="image/*,.pdf">
+
+
+<p id="uploadStatus">
+No file selected
+</p>
+
+
+</div>
+
+
+
+<label>
+Delivery Address
+</label>
+
+<textarea
+id="customerAddress"
+placeholder="Your location">
+</textarea>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="order-box">
+
+
+<h2>
+Your Order
+</h2>
+
+
+
+<div id="checkoutItems">
+
+</div>
+
+
+
+<h3>
+
+Total:
+<span id="checkoutTotal">
+₦0
+</span>
+
+</h3>
+
+
+
+
+<button id="placeOrder">
+
+PLACE ORDER
+
+</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Austin Global Services
+</p>
+
+</footer>
+
+
+
+
+<script type="module" src="js/checkout.js"></script>
+
+
+</body>
+
+</html>
