@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Example: window.open(`https://wa.me/2349115643951?text=${encodeURIComponent(summary)}`);
 
     closePanel();
-    
+
     // Reset form
     document.getElementById('notes').value = '';
     document.getElementById('delivery').checked = false;
@@ -178,3 +178,5 @@ function updateTotal() {
     document.getElementById("totalPrice").textContent =
         "₦" + (currentService.price * quantity).toLocaleString();
 }
+
+
