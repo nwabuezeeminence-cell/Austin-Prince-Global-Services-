@@ -1,124 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Our Services - Austin Global Services">
-  <title>Austin Global Services | Services</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img/favicon.png">
-  <style>
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .service-card {
-      background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-    .service-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 25px rgba(232, 73, 29, 0.15);
-    }
-    .order-panel {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      width: 90%;
-      max-width: 500px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      z-index: 2000;
-      padding: 2rem;
-    }
-    .overlay {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.7);
-      z-index: 1999;
-    }
-  </style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Services | Austin Global Services</title>
+
+    <meta name="description"
+          content="Professional Printing, Photocopying, Graphic Design, Passport Photography and Digital Services.">
+
+    <link rel="icon" href="images/logo.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
+<!-- ===== TOP BAR ===== -->
+
+<div class="top-bar">
+
+    <div class="container">
+
+        <div class="top-left">
+
+            <span>
+                <i class="fas fa-phone"></i>
+                09115643951
+            </span>
+
+            <span>
+                <i class="fas fa-phone"></i>
+                09049042010
+            </span>
+
+            <span>
+                <i class="fas fa-envelope"></i>
+                whiteperfect946@gmail.com
+            </span>
+
+        </div>
+
+        <div class="top-right">
+
+            <span>
+
+                <i class="fas fa-clock"></i>
+
+                Mon – Sat: 8:00 AM – 6:00 PM
+
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ================= SERVICES HERO SECTION ================= -->
+
+<section class="services-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container services-hero-content">
+
+        <!-- Breadcrumb -->
+
+        <div class="breadcrumb">
+
+            <a href="index.html">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+
+            <span>
+                <i class="fas fa-angle-right"></i>
+            </span>
+
+            <span class="current-page">
+                Services
+            </span>
+
+        </div>
+
+        <!-- Heading -->
+
+        <h1>
+
+            Our Professional Services
+
+        </h1>
+
+        <!-- Description -->
+
+        <p>
+
+            We provide high-quality printing, photocopying, passport photography,
+            graphic design, document typing, scanning, binding, lamination,
+            branding, and many more professional digital services.
+
+        </p>
+
+        <!-- Hero Buttons -->
+
+        <div class="hero-buttons">
+
+            <a href="#services-list" class="btn-primary">
+
+                <i class="fas fa-th-large"></i>
+
+                Browse Services
+
+            </a>
+
+            <a href="contact.html" class="btn-secondary">
+
+                <i class="fas fa-headset"></i>
+
+                Contact Us
+
+            </a>
+
+        </div>
+
+        <!-- Quick Highlights -->
+
+        <div class="hero-highlights">
+
+            <div class="highlight-box">
+
+                <i class="fas fa-check-circle"></i>
+
+                <span>High Quality</span>
+
+            </div>
+
+            <div class="highlight-box">
+
+                <i class="fas fa-bolt"></i>
+
+                <span>Fast Delivery</span>
+
+            </div>
+
+            <div class="highlight-box">
+
+                <i class="fas fa-shield-alt"></i>
+
+                <span>Trusted Service</span>
+
+            </div>
+
+            <div class="highlight-box">
+
+                <i class="fas fa-star"></i>
+
+                <span>Top Rated</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= SEARCH & FILTER ================= -->
+
+<section class="service-search">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>FIND SERVICES</span>
+
+            <h2>Search & Filter Services</h2>
+
+            <p>
+                Quickly find the service you need using the search box and filters below.
+            </p>
+
+        </div>
+
+        <div class="search-filter-container">
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <i class="fas fa-search"></i>
+
+                <input
+                    type="text"
+                    id="serviceSearch"
+                    placeholder="Search for printing, photocopying, binding...">
+
+            </div>
+
+            <!-- Category -->
+
+            <div class="filter-box">
+
+                <i class="fas fa-layer-group"></i>
+
+                <select id="categoryFilter">
+
+                    <option value="all">All Categories</option>
+
+                    <option value="printing">Printing</option>
+
+                    <option value="photocopy">Photocopying</option>
+
+                    <option value="binding">Binding</option>
+
+                    <option value="passport">Passport Photos</option>
+
+                    <option value="design">Graphic Design</option>
+
+                    <option value="typing">Document Typing</option>
+
+                    <option value="scanning">Scanning</option>
+
+                    <option value="lamination">Lamination</option>
+
+                </select>
+
+            </div>
+
+            <!-- Sort -->
+
+            <div class="filter-box">
+
+                <i class="fas fa-sort"></i>
+
+                <select id="sortServices">
+
+                    <option value="default">
+                        Sort Services
+                    </option>
+
+                    <option value="popular">
+                        Most Popular
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="rating">
+                        Highest Rated
+                    </option>
+
+                </select>
+
+            </div>
+
+            <!-- Search Button -->
+
+            <button id="searchButton"
+                    class="btn-primary">
+
+                <i class="fas fa-search"></i>
+
+                Search
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= SERVICES LIST ================= -->
+
+<section id="services-list" class="services-list">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>OUR SERVICES</span>
+
+            <h2>Choose a Service</h2>
+
+            <p>
+                Select any service below to view details, choose quantity,
+                upload your files and place an order.
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card" data-category="printing">
+
+    <span class="service-tag">
+        Most Popular
+    </span>
+
+    <img src="images/services/printing.jpg"
+         alt="Printing">
+
+    <div class="service-content">
+
+        <h3>Printing</h3>
+
+        <p>
+
+            Colour and black & white document printing
+            with excellent quality.
+
+        </p>
+
+        <div class="service-info">
+
+            <span>
+                <i class="fas fa-star"></i>
+                4.9
+            </span>
+
+            <span>
+                From ₦500
+            </span>
+
+        </div>
+
+        <div class="service-buttons">
+
+            <button class="btn-primary">
+
+                Order Now
+
+            </button>
+
+            <button class="btn-outline">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="service-card" data-category="photocopy">
+
+    <img src="images/services/photocopy.jpg"
+         alt="Photocopying">
+
+    <div class="service-content">
+
+        <h3>Photocopying</h3>
+
+        <p>
+
+            Fast and clear black & white
+            or colour photocopying.
+
+        </p>
+
+        <div class="service-info">
+
+            <span>
+
+                <i class="fas fa-star"></i>
+
+                4.8
+
+            </span>
+
+            <span>
+
+                From ₦50
+
+            </span>
+
+        </div>
+
+        <div class="service-buttons">
+
+            <button class="btn-primary">
+
+                Order Now
+
+            </button>
+
+            <button class="btn-outline">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="service-card" data-category="binding">
+
+    <img src="images/services/binding.jpg"
+         alt="Binding">
+
+    <div class="service-content">
+
+        <h3>Binding</h3>
+
+        <p>
+
+            Spiral, comb and hard-cover
+            document binding.
+
+        </p>
+
+        <div class="service-info">
+
+            <span>
+
+                <i class="fas fa-star"></i>
+
+                4.9
+
+            </span>
+
+            <span>
+
+                From ₦1000
+
+            </span>
+
+        </div>
+
+        <div class="service-buttons">
+
+            <button class="btn-primary">
+
+                Order Now
+
+            </button>
+
+            <button class="btn-outline">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+        </div>
+
+    </div>
+  <!-- ================= SERVICE DETAILS MODAL ================= -->
+
+<div id="serviceModal" class="service-modal">
+
+    <div class="modal-content">
+
+        <!-- Close Button -->
+        <button class="close-modal" id="closeModal">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Service Image -->
+        <div class="modal-image">
+            <img id="modalImage"
+                 src="images/services/printing.jpg"
+                 alt="Service">
+        </div>
+
+        <!-- Service Information -->
+        <div class="modal-details">
+
+            <h2 id="modalTitle">
+                Printing Service
+            </h2>
+
+            <p id="modalDescription">
+                Professional printing services for students,
+                offices and businesses.
+            </p>
+
+            <div class="price-box">
+                Starting Price:
+                <strong id="modalPrice">
+                    ₦500
+                </strong>
+            </div>
+
+            <!-- Paper Size -->
+            <div class="form-group">
+
+                <label>Paper Size</label>
+
+                <select id="paperSize">
+
+                    <option>A4</option>
+
+                    <option>A3</option>
+
+                    <option>A5</option>
+
+                    <option>Letter</option>
+
+                </select>
+
+            </div>
+
+            <!-- Print Type -->
+            <div class="form-group">
+
+                <label>Print Type</label>
+
+                <select id="printType">
+
+                    <option>Black & White</option>
+
+                    <option>Colour</option>
+
+                </select>
+
+            </div>
+
+            <!-- Quantity -->
+            <div class="form-group">
+
+                <label>Quantity</label>
+
+                <div class="quantity-box">
+
+                    <button id="minusQty">−</button>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        value="1"
+                        min="1">
+
+                    <button id="plusQty">+</button>
+
+                </div>
+
+            </div>
+
+            <!-- Upload -->
+            <div class="form-group">
+
+                <label>Upload File</label>
+
+                <input
+                    type="file"
+                    id="documentFile"
+                    accept=".pdf,.doc,.docx,.png,.jpg,.jpeg">
+
+            </div>
+
+            <!-- Notes -->
+            <div class="form-group">
+
+                <label>Special Instructions</label>
+
+                <textarea
+                    id="specialNotes"
+                    rows="4"
+                    placeholder="Enter any special instructions..."></textarea>
+
+            </div>
+
+            <!-- Delivery -->
+            <div class="form-group">
+
+                <label>Delivery Method</label>
+
+                <select id="deliveryMethod">
+
+                    <option>Pickup</option>
+
+                    <option>Home Delivery</option>
+
+                </select>
+
+            </div>
+
+            <!-- Live Total -->
+            <div class="total-price">
+
+                Total:
+
+                <span id="liveTotal">
+                    ₦500
+                </span>
+
+            </div>
+
+            <!-- Buttons -->
+            <div class="modal-buttons">
+
+                <button class="btn-outline">
+
+                    Add to Cart
+
+                </button>
+
+                <button class="btn-primary">
+
+                    Order Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div> 
+
+</section>
+
 <body>
-  <!-- Header same as before -->
-  <header>
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight">Austin Global</span> Services</h1>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="current"><a href="services.html">Services</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="main">
-    <div class="container">
-      <h1 class="page-title">Our Services</h1>
-      <p>Click on any service to place an order</p>
-
-      <div class="service-grid" id="serviceGrid">
-        <!-- Services will be populated by JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Order Panel -->
-  <div class="overlay" id="overlay"></div>
-  <div class="order-panel" id="orderPanel">
-    <h2 id="selectedService"></h2>
-    <div>
-      <label>Quantity:</label><br>
-      <button onclick="changeQty(-1)">–</button>
-      <span id="quantity" style="margin:0 15px;font-size:1.3rem;">1</span>
-      <button onclick="changeQty(1)">+</button>
-    </div><br>
-
-    <label>Print Type:</label><br>
-    <select id="printType">
-      <option value="Black & White">Black & White</option>
-      <option value="Colored">Colored</option>
-      <option value="Custom">Custom (specify below)</option>
-    </select><br><br>
-
-    <label>Additional Notes / Description:</label><br>
-    <textarea id="notes" rows="3" placeholder="Any special instructions..."></textarea><br><br>
-
-    <label>Upload Document/Image (optional):</label><br>
-    <input type="file" id="fileUpload" accept="image/*,.pdf"><br><br>
-
-    <label>
-      <input type="checkbox" id="delivery"> I want Delivery
-    </label><br><br>
-
-    <div id="locationField" style="display:none;">
-      <label>Delivery Location:</label><br>
-      <input type="text" id="location" placeholder="Full address">
-    </div><br>
-
-    <button class="button_1" onclick="submitOrder()" style="width:100%;padding:16px;">SUBMIT ORDER</button>
-    <button onclick="closePanel()" style="margin-top:10px;width:100%;padding:12px;background:#666;">Cancel</button>
-  </div>
-
-  <footer>
-    <p>&copy; 2026 Austin Global Services. All Rights Reserved.</p>
-  </footer>
-
-  <script src="./js/script.js"></script>
-</body>
-</html>
+    </html>
