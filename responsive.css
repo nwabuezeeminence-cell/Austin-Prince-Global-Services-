@@ -1,0 +1,168 @@
+/*==================================
+ RESPONSIVE DESIGN
+==================================*/
+
+/* Large Tablets */
+@media (max-width: 992px){
+
+.header-container{
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.hero h1{
+    font-size:44px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.section-title{
+    font-size:32px;
+}
+
+}
+
+/* Tablets */
+@media (max-width:768px){
+
+.header-container{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    gap:15px;
+}
+
+.hero{
+    min-height:75vh;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+}
+
+.btn-primary,
+.btn-secondary{
+    width:100%;
+}
+
+.search-box{
+    flex-direction:column;
+    border-radius:15px;
+}
+
+.search-box input{
+    width:100%;
+}
+
+.search-box button{
+    width:100%;
+}
+
+.category-grid,
+.featured-grid,
+.review-grid,
+.stats-grid,
+.footer-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+/* Mobile Phones */
+@media (max-width:576px){
+
+.container{
+    width:95%;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+.hero{
+    min-height:70vh;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+.category-card,
+.featured-card,
+.review-card,
+.stat-card{
+    border-radius:15px;
+}
+
+.price-tag{
+    font-size:14px;
+    padding:8px 12px;
+}
+
+.footer{
+    text-align:center;
+}
+
+.social-icons{
+    justify-content:center;
+}
+
+.payment-icons{
+    justify-content:center;
+}
+
+}
+
+/* Very Small Phones */
+@media (max-width:360px){
+
+.hero h1{
+    font-size:26px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:14px;
+    font-size:15px;
+}
+
+.search-box input{
+    padding:14px;
+}
+
+.search-box button{
+    padding:14px;
+}
+
+}

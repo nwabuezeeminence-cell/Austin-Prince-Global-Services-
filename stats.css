@@ -1,0 +1,52 @@
+/*==================================
+ BUSINESS STATISTICS
+==================================*/
+
+.stats{
+    padding:90px 0;
+    background:linear-gradient(135deg,#1e40af,#0f172a);
+    color:#fff;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    text-align:center;
+}
+
+.stat-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    border-radius:18px;
+    padding:35px 20px;
+    transition:.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,.15);
+}
+
+.stat-icon{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.stat-number{
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:10px;
+    color:#fbbf24;
+}
+
+.stat-title{
+    font-size:18px;
+    font-weight:600;
+}
+
+.stat-description{
+    margin-top:10px;
+    font-size:14px;
+    opacity:.9;
+}
