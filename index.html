@@ -1,132 +1,962 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="Printing, Photocopying, Computer Services, Typing, Lamination, Nigeria">
-<link rel="icon" href="favicon.png">
-<meta name="author" content="Austin Global Services">
-  <meta name="description" content="Professional Computing and Document Services">
-  <title>Austin Global Services | Welcome</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Global Services</title>
+
+    <meta name="description"
+          content="Professional Printing, Photocopying, Typing, Passport Photos, Graphic Design and Digital Services.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
-  <header>
+    <!-- ================= TOP BAR ================= -->
+<div class="top-bar">
     <div class="container">
-      <div id="branding">
-        <h1><span class="highlight">Austin Global</span> Services</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="pricing.html">Pricing</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <section id="showcase">
-    <div class="container">
-      <h1>Professional Computing & Document Services</h1>
-      <p>Fast • Reliable • Affordable solutions for all your document needs.</p>
-    </div>
-  </section>
-
-  <section id="main">
-    <div class="container">
-      <article id="main-col">
-        <h1 class="page-title">Get In Touch</h1>
-        <p>We provide high-quality computing and administrative services across Nigeria.</p>
-
-        <div class="dark">
-          <p><strong>WhatsApp:</strong> <a href="https://wa.me/2349115643951" target="_blank" rel="noopener noreferrer"></p>
-          <p><strong>WhatsApp Business:</strong> <a href="https://wa.me/2349049042010" style="color:#4ade80">09049042010</a></p>
-          <p><strong>Email:</strong> <a href="mailto:whiteperfect946@gmail.com" style="color:#60a5fa">whiteperfect946@gmail.com</a></p>
+        <div class="top-left">
+            <span>📞 09115643951</span>
+            <span>📞 09049042010</span>
+            <span>✉️ whiteperfect946@gmail.com</span>
         </div>
-      </article>
-<h3>Location</h3>
 
-<iframe
-src="YOUR_GOOGLE_MAPS_EMBED_LINK"
-width="100%"
-height="250"
-style="border:0;"
-loading="lazy"
-allowfullscreen>
-</iframe>
-
-      <aside id="sidebar">
-        <div class="dark">
-          <h3>Send a Message</h3>
-          <form id="contact-form">
-    <label>Name</label><br>
-    <input type="text" name="name" required><br><br>
-
-    <label>Email</label><br>
-    <input type="email" name="email" required><br><br>
-
-    <label>Phone</label><br>
-    <input type="tel" name="phone"><br><br>
-
-    <label>Message</label><br>
-    <textarea name="message" required></textarea><br><br>
-
-    <button class="button_1" type="submit">Send Message</button>
-</form>
+        <div class="top-right">
+            <span>🕒 Mon - Sat: 8:00 AM - 6:00 PM</span>
         </div>
-      </aside>
+
     </div>
-  </section>
-
-  <section id="boxes">
-    <div class="container">
-      <div class="box">
-        <img src="https://picsum.photos/id/1015/600/400" alt="Printing">
-        <h3>Printing & Photocopying</h3>
-        <p>High-quality color and black & white printing.</p>
-      </div>
-      <div class="box">
-        <img src="https://picsum.photos/id/201/600/400" alt="Documents">
-        <h3>Document Processing</h3>
-        <p>Passports, laminating, editing & formatting.</p>
-      </div>
-      <div class="box">
-        <img src="https://picsum.photos/id/367/600/400" alt="Digital">
-        <h3>Digital Solutions</h3>
-        <p>PDF conversions, scanning, and more.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Austin Global Services. All Rights Reserved.</p>
-  </footer>
-
-  <div class="floating-social">
-    <a href="https://wa.me/2349115643951" target="_blank" class="social-btn whatsapp" title="WhatsApp">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-    </a>
-    <a href="https://wa.me/2349049042010" target="_blank" class="social-btn whatsapp" title="WhatsApp Business">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Business">
-    </a>
-<img
-src="https://picsum.photos/id/1015/600/400"
-alt="Printing Services"
-loading="lazy">
-  </div>
-<div class="floating-social">
-    <!-- WhatsApp -->
-
-    <!-- Facebook -->
-
-    <!-- Instagram -->
-
-    <!-- TikTok -->
 </div>
-  <script src="./js/script.js"></script>
-</body>
-</html>
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+    <div class="container">
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Austin Global Services Logo">
+            <div class="logo-text">
+                <h2>Austin Global Services</h2>
+                <small>Printing & Digital Solutions</small>
+            </div>
+        </a>
+
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+
+            <a href="index.html" class="active">Home</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="pricing.html">Pricing</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <!-- Right Icons -->
+        <div class="nav-icons">
+
+            <a href="login.html" title="Login">
+                👤
+            </a>
+
+            <a href="notifications.html" title="Notifications">
+                🔔
+                <span class="badge">0</span>
+            </a>
+
+            <a href="cart.html" title="Shopping Cart">
+                🛒
+                <span class="badge" id="cartCount">0</span>
+            </a>
+
+            <!-- Mobile Menu -->
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+
+Professional Printing & Digital Services
+
+</h1>
+
+<p>
+
+Fast, Affordable and Reliable Solutions for Students, Businesses and Individuals.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="services.html" class="btn-primary">
+
+Browse Services
+
+</a>
+
+<a href="contact.html" class="btn-secondary">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section class="home-search">
+
+<input
+type="text"
+id="homeSearch"
+placeholder="Search for a service...">
+
+<button>
+
+Search
+
+</button>
+
+</section>
+<section class="featured-services">
+
+<div class="container">
+
+<h2>🔥 Featured Services</h2>
+
+<p>
+Our most requested professional services
+</p>
+
+<div id="featuredServices" class="featured-grid">
+
+<!-- JavaScript will load service cards here -->
+
+</div>
+
+</div>
+
+</section>
+<section class="why-us">
+
+<div class="container">
+
+<h2>Why Choose Austin Global Services?</h2>
+
+<div class="why-grid">
+
+<div class="why-card">
+<h3>⚡ Fast Service</h3>
+<p>Most jobs are completed the same day.</p>
+</div>
+
+<div class="why-card">
+<h3>💰 Affordable Prices</h3>
+<p>Quality services at competitive prices.</p>
+</div>
+
+<div class="why-card">
+<h3>📦 Delivery Available</h3>
+<p>Eligible orders can be delivered to your location.</p>
+</div>
+
+<div class="why-card">
+<h3>🔒 Secure File Handling</h3>
+<p>Your documents are handled with care and privacy.</p>
+</div>
+
+<div class="why-card">
+<h3>⭐ Excellent Customer Service</h3>
+<p>Friendly support before and after your order.</p>
+</div>
+
+<div class="why-card">
+<h3>🖨️ Professional Equipment</h3>
+<p>High-quality printing and finishing for every job.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<div class="container header-container">
+
+<div class="logo">
+
+<img src="images/logo/logo.png" alt="Austin Global Services">
+
+<div>
+
+<h2>Austin Global Services</h2>
+
+<p>Printing • Computing • Digital Services</p>
+
+</div>
+
+</div>
+
+<nav id="navbar">
+
+<ul>
+
+<li><a href="index.html" class="active">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="pricing.html">Pricing</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<div class="header-icons">
+
+<button class="search-btn">
+
+🔍
+
+</button>
+
+<a href="cart.html" class="cart-btn">
+
+🛒
+
+<span id="cartCount">0</span>
+
+</a>
+
+<button id="menuBtn">
+
+☰
+
+</button>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="container hero-content">
+
+<h1>
+
+Professional Printing & Document Services
+
+</h1>
+
+<p>
+
+Fast, Reliable and Affordable Solutions for Students,
+
+Businesses and Professionals.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="services.html" class="btn-primary">
+
+Browse Services
+
+</a>
+
+<a href="contact.html" class="btn-secondary">
+
+Order Now
+
+</a>
+
+</div>
+
+<div class="search-box">
+
+<input
+
+type="text"
+
+placeholder="Search for Printing, Typing, Passport..."
+
+id="serviceSearch">
+
+<button>
+
+Search
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+<section class="categories">
+
+    <div class="container">
+
+        <h2 class="section-title">Our Services</h2>
+
+        <p class="section-subtitle">
+            Click any service to place your order.
+        </p>
+
+        <div class="category-grid">
+
+            <a href="services.html#printing" class="category-card">
+                <img src="images/services/printing.jpg" alt="Printing">
+                <h3>Printing</h3>
+                <p>Colour & Black/White Printing</p>
+            </a>
+
+            <a href="services.html#photocopy" class="category-card">
+                <img src="images/services/photocopy.jpg" alt="Photocopying">
+                <h3>Photocopying</h3>
+                <p>Fast High-Quality Copies</p>
+            </a>
+
+            <a href="services.html#typing" class="category-card">
+                <img src="images/services/typing.jpg" alt="Typing">
+                <h3>Typing</h3>
+                <p>Professional Document Typing</p>
+            </a>
+
+            <a href="services.html#passport" class="category-card">
+                <img src="images/services/passport.jpg" alt="Passport Photos">
+                <h3>Passport Photos</h3>
+                <p>Instant Passport Photography</p>
+            </a>
+
+            <a href="services.html#binding" class="category-card">
+                <img src="images/services/binding.jpg" alt="Binding">
+                <h3>Binding</h3>
+                <p>Spiral & Hard Cover</p>
+            </a>
+
+            <a href="services.html#lamination" class="category-card">
+                <img src="images/services/lamination.jpg" alt="Lamination">
+                <h3>Lamination</h3>
+                <p>Protect Important Documents</p>
+            </a>
+
+            <a href="services.html#scanning" class="category-card">
+                <img src="images/services/scanning.jpg" alt="Scanning">
+                <h3>Scanning</h3>
+                <p>High Resolution Document Scan</p>
+            </a>
+
+            <a href="services.html#computer" class="category-card">
+                <img src="images/services/computer.jpg" alt="Computer Services">
+                <h3>Computer Services</h3>
+                <p>Digital & Administrative Support</p>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="featured-services">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Featured Services
+        </h2>
+
+        <div class="featured-grid">
+
+            <div class="featured-card">
+
+                <img src="images/services/printing.jpg" alt="Printing">
+
+                <div class="featured-info">
+
+                    <h3>Printing & Photocopying</h3>
+
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐ (4.9)
+                    </div>
+
+                    <p class="price">
+                        From ₦500
+                    </p>
+
+                    <span class="badge">
+                        Same Day Service
+                    </span>
+
+                    <a href="services.html"
+                       class="view-btn">
+                       View Details
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="why-us">
+
+<div class="container">
+
+<h2 class="section-title">Why Choose Austin Global Services?</h2>
+
+<div class="why-grid">
+
+<div class="why-card">
+<h1>⚡</h1>
+<h3>Fast Turnaround</h3>
+<p>Most jobs are completed the same day.</p>
+</div>
+
+<div class="why-card">
+<h1>💰</h1>
+<h3>Affordable Prices</h3>
+<p>High quality at student-friendly prices.</p>
+</div>
+
+<div class="why-card">
+<h1>🖨️</h1>
+<h3>Professional Equipment</h3>
+<p>Sharp prints and quality finishing.</p>
+</div>
+
+<div class="why-card">
+<h1>🔒</h1>
+<h3>Secure Documents</h3>
+<p>Your uploaded files remain private.</p>
+</div>
+
+<div class="why-card">
+<h1>🚚</h1>
+<h3>Delivery Available</h3>
+<p>Qualifying orders can be delivered.</p>
+</div>
+
+<div class="why-card">
+<h1>📞</h1>
+<h3>Customer Support</h3>
+<p>Fast assistance through WhatsApp and phone.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="stats">
+
+<div class="container">
+
+<div class="stat-box">
+<h1>1000+</h1>
+<p>Orders Completed</p>
+</div>
+
+<div class="stat-box">
+<h1>500+</h1>
+<p>Happy Customers</p>
+</div>
+
+<div class="stat-box">
+<h1>99%</h1>
+<p>Customer Satisfaction</p>
+</div>
+
+<div class="stat-box">
+<h1>24/7</h1>
+<p>Customer Support</p>
+</div>
+
+</div>
+
+</section>
+<section class="reviews">
+
+<div class="container">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+Fast service. My documents were printed perfectly.
+</p>
+
+<strong>— Chinedu</strong>
+
+</div>
+
+<div class="review-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+Very affordable and professional.
+</p>
+
+<strong>— Esther</strong>
+
+</div>
+
+<div class="review-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+Delivery was quick and the quality was excellent.
+</p>
+
+<strong>— Michael</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="cta">
+
+<div class="container">
+
+<h2>
+
+Ready to Place Your Order?
+
+</h2>
+
+<p>
+
+Upload your files and let Austin Global Services handle the rest.
+
+</p>
+
+<a href="services.html" class="button_1">
+
+Order Now
+
+</a>
+
+</div>
+
+</section>
+  </header>
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <span class="hero-badge">
+                ⭐ Trusted by Students & Businesses
+            </span>
+
+            <h1>
+                Professional Printing & Digital Services
+            </h1>
+
+            <p>
+                Fast, reliable, and affordable printing, photocopying,
+                binding, passport photographs, graphic design,
+                document typing, scanning, and many more.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="services.html" class="btn-primary">
+                    Order Now
+                </a>
+
+                <a href="services.html" class="btn-secondary">
+                    Browse Services
+                </a>
+
+            </div>
+
+            <div class="hero-info">
+
+                <div class="info-box">
+                    <h3>5000+</h3>
+                    <span>Happy Customers</span>
+                </div>
+
+                <div class="info-box">
+                    <h3>10000+</h3>
+                    <span>Documents Printed</span>
+                </div>
+
+                <div class="info-box">
+                    <h3>4.9★</h3>
+                    <span>Customer Rating</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/hero.png"
+                 alt="Austin Global Services">
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= SEARCH SECTION ================= -->
+<section class="search-section">
+
+    <div class="container">
+
+        <h2>Find a Service</h2>
+
+        <p>
+            Search for any printing or digital service.
+        </p>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="serviceSearch"
+                placeholder="Search Printing, Photocopying, Binding..."
+            >
+
+            <button id="searchBtn">
+                🔍 Search
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICE CATEGORIES ================= -->
+
+<section class="categories">
+
+    <div class="container">
+
+        <h2>Our Services</h2>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <img src="images/printing.png" alt="Printing">
+                <h3>Printing</h3>
+                <p>Colour & Black and White Printing</p>
+            </div>
+
+            <div class="category-card">
+                <img src="images/photocopy.png" alt="Photocopy">
+                <h3>Photocopying</h3>
+                <p>Fast and Clear Copies</p>
+            </div>
+
+            <div class="category-card">
+                <img src="images/binding.png" alt="Binding">
+                <h3>Binding</h3>
+                <p>Spiral & Hard Cover</p>
+            </div>
+
+            <div class="category-card">
+                <img src="images/passport.png" alt="Passport">
+                <h3>Passport Photos</h3>
+                <p>Professional Passport Photography</p>
+            </div>
+
+            <div class="category-card">
+                <img src="images/design.png" alt="Graphic Design">
+                <h3>Graphic Design</h3>
+                <p>Flyers, Banners & Logos</p>
+            </div>
+
+            <div class="category-card">
+                <img src="images/scanner.png" alt="Scanning">
+                <h3>Scanning</h3>
+                <p>PDF & High-Quality Document Scanning</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FEATURED SERVICES ================= -->
+
+<section class="featured-services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>POPULAR SERVICES</span>
+
+            <h2>Our Most Requested Services</h2>
+
+            <p>
+                Quality services at affordable prices.
+            </p>
+
+        </div>
+
+        <div class="featured-grid">
+
+            <div class="service-card">
+
+                <span class="service-badge">Popular</span>
+
+                <img src="images/printing.jpg"
+                     alt="Printing">
+
+                <h3>Printing & Photocopying</h3>
+
+                <p>
+                    High-quality black & white and colour printing.
+                </p>
+
+                <div class="price">
+                    From <strong>₦500</strong>
+                </div>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(245 Reviews)</span>
+                </div>
+
+                <div class="service-buttons">
+
+                    <a href="services.html"
+                       class="btn-primary">
+                        Order Now
+                    </a>
+
+                    <button class="btn-outline">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Repeat similar cards for Binding, Passport Photos, Graphic Design, Scanning, etc. -->
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= SPECIAL OFFERS ================= -->
+
+<section class="offers">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>LIMITED TIME</span>
+
+            <h2>Today's Special Offers</h2>
+
+        </div>
+
+        <div class="offer-grid">
+
+            <div class="offer-card">
+                <div class="offer-icon">🔥</div>
+                <h3>Student Discount</h3>
+                <p>Enjoy discounted printing on eligible student documents.</p>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-icon">🚚</div>
+                <h3>Delivery Available</h3>
+                <p>Eligible orders can be delivered directly to your location.</p>
+            </div>
+
+            <div class="offer-card">
+                <div class="offer-icon">🎁</div>
+                <h3>Bulk Orders</h3>
+                <p>Special pricing for schools, offices, and organizations.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>WHY US</span>
+
+            <h2>Why Choose Austin Global Services?</h2>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <div class="why-icon">⚡</div>
+                <h3>Fast Service</h3>
+                <p>Many jobs are completed the same day.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">💰</div>
+                <h3>Affordable Prices</h3>
+                <p>Competitive pricing with quality results.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">🔒</div>
+                <h3>Secure File Handling</h3>
+                <p>Your documents are handled carefully and privately.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">🖨️</div>
+                <h3>Professional Equipment</h3>
+                <p>Modern equipment for excellent print quality.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">📦</div>
+                <h3>Delivery Option</h3>
+                <p>Convenient delivery for qualifying orders.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">💬</div>
+                <h3>Friendly Support</h3>
+                <p>We're
+                <!-- ================= BUSINESS STATISTICS ================= -->
+
+<section class="statistics">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="10000">0</h2>
+                <p>Documents Printed</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="5000">0</h2>
+                <p>Happy Customers</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="250">0</h2>
+                <p>Business Partners</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>4.9★</h2>
+                <p>Average Rating</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>TESTIMONIALS</span>
+
+            <h2>What Our Customers Say</h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p>
+                    Excellent printing quality and very fast delivery.
+                    Highly recommended.
+                </p>
+
+                <h4>— Customer</h4>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p>
+                    My project was printed perfectly.
+                    The staff were friendly and professional.
+                </p>
+
+                <h4>— Student</h4>
+
+            </div>
+
+            <div class="testi
